@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Office Employee Management System</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .dashboard-card {
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .action-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 14px;
+    }
+
+    .action-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card dashboard-card p-4">
+        <div class="card-body">
+          <div class="text-center mb-4">
+            <h1 class="fw-semibold">Employee Management System</h1>
+            <p class="text-muted">Manage employees efficiently from one place</p>
+            <hr>
+          </div>
+
+          <div class="row g-4">
+            <!-- View Employees -->
+            <div class="col-md-6 col-lg-3">
+              <a href="/allemp" class="text-decoration-none text-dark">
+                <div class="card action-card text-center p-3 h-100">
+                  <div class="icon-circle bg-primary mx-auto">👥</div>
+                  <h5 class="fw-medium">View Employees</h5>
+                  <p class="text-muted small">See complete employee list</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Add Employee -->
+            <div class="col-md-6 col-lg-3">
+              <a href="/addemp" class="text-decoration-none text-dark">
+                <div class="card action-card text-center p-3 h-100">
+                  <div class="icon-circle bg-success mx-auto">➕</div>
+                  <h5 class="fw-medium">Add Employee</h5>
+                  <p class="text-muted small">Register new employee</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Remove Employee -->
+            <div class="col-md-6 col-lg-3">
+              <a href="/removeemp" class="text-decoration-none text-dark">
+                <div class="card action-card text-center p-3 h-100">
+                  <div class="icon-circle bg-danger mx-auto">🗑️</div>
+                  <h5 class="fw-medium">Remove Employee</h5>
+                  <p class="text-muted small">Delete employee record</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Filter Employee -->
+            <div class="col-md-6 col-lg-3">
+              <a href="/filteremp" class="text-decoration-none text-dark">
+                <div class="card action-card text-center p-3 h-100">
+                  <div class="icon-circle bg-warning mx-auto">🔍</div>
+                  <h5 class="fw-medium">Filter Employee</h5>
+                  <p class="text-muted small">Search employee details</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
